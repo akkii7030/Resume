@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    letter-spacing: 10px;
+    margin-bottom: 5px;
+}
+
+.title {
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 5px;
+    margin-top: 5px;
+}
+
+.section {
+    margin: 20px 0;
+}
+
+.section h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.two-column > div {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: blue;
+    text-decoration: none;
+}
+
+.contact p, .about p, .skills p, .education p, .work-experience p, .projects p {
+    margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+        letter-spacing: 5px;
+    }
+    .title {
+        font-size: 16px;
+        letter-spacing: 3px;
+    }
+    .two-column > div {
+        width: 100%;
+    }
+    .container {
+        padding: 10px;
+    }
+}
